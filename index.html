@@ -27,15 +27,22 @@
         </select>
       </div>
       <div class="param">
-        Select file: <input id="fileInput" type="file" accept="image/*" />
+        Select file: <input id="fileInput" type="file" accept="image/*" /><input
+          type="button"
+          value="View"
+          onclick="preview()"
+        />
       </div>
       <div class="param">
         Or insert file url:
-        <input id="urlInput" type="text" />
+        <input id="urlInput" type="text" /><input
+          type="button"
+          value="View"
+          onclick="preview()"
+        />
       </div>
       <div class="param">
         <input type="button" value="Rest" onclick="cal.init()" />
-        <input type="button" value="Preview" onclick="preview()" />
         <input type="button" value="Download image" onclick="download()" />
       </div>
     </div>
