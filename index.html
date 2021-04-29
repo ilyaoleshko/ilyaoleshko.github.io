@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script src="https://rawgit.com/tsayen/dom-to-image/master/dist/dom-to-image.min.js"></script>
+    <link href="src/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="controls">
+      <div class="param">
+        Select month:
+        <select id="monthInput" name="months" onchange="preview()">
+          <option value="1">Январь</option>
+          <option value="2">Февраль</option>
+          <option value="3">Март</option>
+          <option value="4">Апрель</option>
+          <option value="5">Май</option>
+          <option value="6">Июнь</option>
+          <option value="7">Июль</option>
+          <option value="8">Август</option>
+          <option value="9">Сентябрь</option>
+          <option value="10">Октябрь</option>
+          <option value="11">Ноябрь</option>
+          <option value="12">Декабрь</option>
+        </select>
+      </div>
+      <div class="param">
+        Select file: <input id="fileInput" type="file" accept="image/*" />
+      </div>
+      <div class="param">
+        Or insert file url:
+        <input id="urlInput" type="text" />
+      </div>
+      <div class="param">
+        <input type="button" value="Rest" onclick="cal.init()" />
+        <input type="button" value="Preview" onclick="preview()" />
+        <input type="button" value="Download image" onclick="download()" />
+      </div>
+    </div>
+    <div id="wallpaper">
+      <div class="backdrop"></div>
+      <div class="calendar">
+        <div class="calendar__month">
+          <div class="cal-month__current"></div>
+        </div>
+        <div class="calendar__head">
+          <div class="cal-head__day"></div>
+          <div class="cal-head__day"></div>
+          <div class="cal-head__day"></div>
+          <div class="cal-head__day"></div>
+          <div class="cal-head__day"></div>
+          <div class="cal-head__day"></div>
+          <div class="cal-head__day"></div>
+        </div>
+        <div class="calendar__body">
+          <div class="cal-body__week">
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+          </div>
+          <div class="cal-body__week">
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+          </div>
+          <div class="cal-body__week">
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+          </div>
+          <div class="cal-body__week">
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+          </div>
+          <div class="cal-body__week">
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+          </div>
+          <div class="cal-body__week">
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+            <div class="cal-body__day"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

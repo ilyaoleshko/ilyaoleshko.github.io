@@ -1,0 +1,125 @@
+@import url("https://use.typekit.net/aqm5oxo.css");
+
+body {
+  background-color: #333;
+  color: #ffffff;
+  font-family: lato, sans-serif;
+  margin: 0px;
+}
+
+.controls {
+  margin: 16px;
+  padding: 8px;
+  position: absolute;
+  border: 1px solid gray;
+  border-radius: 6px;
+  z-index: 100;
+  filter: drop-shadow(0px 5px 20px rgba(4, 15, 27, 0.13));
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.param {
+  padding: 8px;
+}
+
+#wallpaper {
+  width: 750px;
+  height: 1334px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(1.JPG) center center no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  position: relative;
+}
+
+.backdrop {
+  width: 750px;
+  height: 1334px;
+  background: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  z-index: 10;
+}
+
+.calendar {
+  width: 446px;
+  position: absolute;
+  z-index: 20;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.calendar__month {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 40px 0;
+  width: 100%;
+  position: relative;
+}
+
+.cal-month__next {
+  right: 0;
+}
+
+.cal-month__current {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.cal-head__day {
+  display: inline-block;
+  width: 50px;
+  height: 42px;
+  text-transform: capitalize;
+}
+
+.cal-body__week {
+  display: block;
+  height: 42px;
+  padding: 8px 0;
+}
+
+.cal-head__day {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 59px;
+}
+
+.calendar__head {
+  display: block;
+  line-height: 42px;
+  position: relative;
+  border-bottom: 1px solid #ffffff;
+  padding: 8px 0;
+  margin-bottom: 8px;
+}
+
+.cal-body__day {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.3);
+  line-height: 50px;
+  text-align: center;
+  width: 59px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.cal-day__month--current {
+  color: #ffffff;
+}
